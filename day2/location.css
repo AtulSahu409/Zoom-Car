@@ -1,0 +1,76 @@
+.input{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0px  0px 200px;
+    padding: 2px;
+
+}
+#locat{
+    width: 30%;
+    margin-bottom: 16px;
+    margin-bottom: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    border-image: initial;
+    border-radius: 4px;
+
+
+}
+.input>img{
+    margin:0px 12px 13px 0px;
+}
+span{
+    text-align: center;
+    padding: 15px;
+    font-size:16px ;
+}
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    margin: auto;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  table td,
+  table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #8caacf;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:rgb(245,245,245);
+    color: black;
+    text-align: center;
+  }
+  #btn{
+    background-color: #2b619e;
+    color:black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 20px;
+    margin:100px 70px 0px 250px;
+  }
+  #btn:hover{
+    background-color: green;
+    color: white;
+  }
