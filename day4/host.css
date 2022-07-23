@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+    padding:10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    z-index: 30;
+}
+header #logo a {
+
+    background-repeat: no-repeat;
+    position:absolute;
+    left:60px;
+    top:25px;
+    display: block;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+header nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.right{
+    display: flex;
+    position:absolute;
+    right:10px;
+    top:25px;
+    gap: 50px;
+}
+a{
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+.sidebaricon{
+
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    z-index: 15;
+    top:22px;
+    left:15px;
+    cursor: pointer;
+ }
+ .sidebarmenu{
+
+    height: 100%;
+    position:fixed;
+    z-index: 20;
+    left:0;
+    top:10px;
+    width:350px;
+    margin-top: 60px;
+    background-color: rgb(37, 37, 243);
+    transform: translateX(-350px);
+    transition:transform 250ms  ease-in-out;
+}
+#opensidebarmenu:checked ~ .sidebarmenu{
+    transform: translateX(0px);
+}                       
+.menu{
+    list-style: none;
+    padding:0px 0px 10px 30px;
+    margin:0px;
+}
+.menu li{
+    color: white;
+    border-bottom: 1px solid rgba(255, 255,255,0.10);
+    padding: 5px;
+}
+.menu a{
+    color:white;
+    display:block;
+    text-decoration: none;
+    text-decoration:uppercase;
+}
+.spinner{
+    height: 3px;
+    background:white;
+    transition: all 0.3s;
+}
+.spinner.middle,.spinner.bottom{
+    margin-top: 3px;
+}
+#opensidebarmenu:checked ~ .sidebaricon > .spinner.middle{
+    opacity: 0;
+}
+#opensidebarmenu:checked ~ .sidebaricon > .spinner.top{
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+#opensidebarmenu:checked ~ .sidebaricon > .spinner.bottom{
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+#opensidebarmenu{
+    width: 0px;
+}
+.right button,.img button{
+    background-color: rgba(200, 137, 2, 0.966);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    padding:12px 10px 10px 10px;
+    margin:0px 20px 0px 0px;
+    cursor: pointer;
+}
+.img{
+    display: grid;
+    background-color: rgb(242, 248, 248);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,300px);
+    gap:30px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.img div{
+    
+    border-radius: 10px;
+
+    padding:15px;
+    width:80%;
+    height: 100%;
+    margin: auto;
+}
+.img div:nth-child(3){
+    
+    border-radius: 10px;
+    width:80%;
+    height: 60%;
+    margin: auto;
+    margin-top: 250px;
+
+}
+.img img{
+    width:100%;
+    height: 100%;
+    position: sticky;
+    bottom: 20rem;
+    z-index: 10;
+    border-radius: 10px;
+
+}
+.box img{
+    width:100%;
+    height: 100%;
+    position: sticky;
+    top:0px;
+    z-index: 10;
+    border-radius: 10px;
+}
+.img h1{
+    color:white;
+    position:absolute;
+    top:9rem;
+    left:16rem;
+    z-index: 11;
+}
+.img p{
+    color:white;
+    position:absolute;
+    top:15rem;
+    left:16rem;
+    z-index: 11;
+}
+.img button{
+
+    border: none;
+    position:absolute;
+    top:18rem;
+    left:16rem;
+    z-index: 11;
+    
+}
+.box{
+    display: grid;
+    background-color: rgb(191, 250, 251);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,200px);
+    gap:20px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.box div{
+    
+    border-radius: 10px;
+    background-color: rgb(191, 250, 251);
+    width:90%;
+    height: 100%;
+    margin: auto;
+}
+#heading{
+    text-align: center;
+    margin-top: 200px;
+}
+#slogn{
+    
+    width: 15%;
+    height: 15%;
+    background-size: contain;
+    margin: 0px 16px;
+ }
+ #slogn>img{
+    margin-top:10px;
+    width:100%  
+ }

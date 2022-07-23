@@ -20,5 +20,4 @@ function display(arr){
         row.append(col1);
         document.querySelector("tbody").append(row);
     });
-    
 }
